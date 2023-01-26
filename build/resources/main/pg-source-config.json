@@ -1,0 +1,15 @@
+{
+  "name": "pg-orders-source",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "postgres",
+    "database.password": "1234",
+    "database.dbname": "newtodo",
+    "database.server.name": "myserver",
+    "plugin.name": "wal2json",
+    "table.include.list": "public.todo",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter"
+  }
+}
