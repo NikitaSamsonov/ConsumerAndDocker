@@ -6,9 +6,9 @@
     "database.port": "5432",
     "database.user": "postgres",
     "database.password": "1234",
-    "database.dbname": "newtodo",
+    "database.dbname": "newstodo",
     "database.server.name": "myserver",
-    "plugin.name": "wal2json",
+    "plugin.name": "pgoutput",
     "table.include.list": "public.todo",
     "value.converter": "org.apache.kafka.connect.json.JsonConverter"
   }
